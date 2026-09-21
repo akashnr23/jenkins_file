@@ -25,7 +25,9 @@ pipeline {
         }
         stage('STAGE') {
             steps {
-                sh 'job 15'
+                sh '''
+                echo "declarative pipeline"
+                '''
 
 
 
