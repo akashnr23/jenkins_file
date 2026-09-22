@@ -1,0 +1,39 @@
+pipeline {
+    agent any 
+    stages {
+        stage('build') {
+            steps {
+                echo 'Application build is completed successfully'
+            }
+        }
+        stage('Test - Testing login page cases') {
+            steps {
+                echo '''Positive:
+                        valid username + valid password
+
+                        Negative:
+                        Invalid username
+                        invalid password
+
+                        Input:
+                        minimun 10 letters
+                        atleast use 3 special characters
+
+                        UI:
+                        password should be masked'''
+            }
+        }
+    }
+}
+
+
+                
+
+
+
+
+
+
+            
+        
+    
